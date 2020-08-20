@@ -1,0 +1,41 @@
+import os
+import pyttsx3
+print("********************************Welcome To Application Launching Software***************************************")
+pyttsx3.speak("Welcome To Application Launching Software")
+while True:
+	j = int(input("\nPress 1 to Launch the Application\nPress 2 to Quit\n"))
+	
+   
+	if j==1:
+		i = input("Enter the Application want to Launch\n")
+		if "chrome" in i:
+			os.system("chrome")
+		elif ("notepad" in i) or ("editor" in i):
+			os.system("notepad")
+		elif ("antivirus" in i) or ("quick heal" in i):
+			os.system("SCANNER")
+		elif ("paint" in i):
+			os.system("mspaint")
+		elif ("antivirus" in i) or ("quick heal" in i):
+			os.system("SCANNER")
+		elif ("vlc" in i) or ("media" in i):
+			os.system("vlc")
+		elif ("downloader" in i) or ("idm" in i) or ("internet download manager" in i):
+			os.system("IDMan")
+		elif ("realtek audio controller" in i) or ("realtek" in i) :
+			os.system("RtkNGUI64")
+		elif ("excel" in i):
+			os.system("EXCEL")
+		elif ("word" in i) or ("WORD" in i) or ("Word" in i):
+			os.system("WINWORD")
+		elif ("powerpoint" or "POWERPOINT" or "power point" or "POWER POINT" in i) :
+			os.system("POWERPNT")
+		else:
+			print("Application Not Found")
+				
+	elif j==2:
+		pyttsx3.speak("Thank you for using Software")
+		break
+	else:
+		print("Invalid Input")
+		pyttsx3.speak("Please Entre Valid Input")
