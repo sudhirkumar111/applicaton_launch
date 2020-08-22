@@ -1,0 +1,55 @@
+import os
+import pyttsx3
+print("\n\n\n==============================================Welcome To Application Launching Software=========================================\n\t\t\t\t\t\t\t")
+pyttsx3.speak("Welcome To Application Launching Software")
+while True:
+	print("\n\n\t\t\t\t\t\t*****************************************")
+	j = int(input("\t\t\t\t\t\t----> Press 1. To Launch the Application\n\t\t\t\t\t\t----> Press 2. To Quit\n\t\t\t\t\t\t*****************************************\t\t\t\t\t\n\t\t\t\t\t\tInput\t:"))
+		
+	if j==1:
+		print("\n\n\t\t\t\t\t\t*****************************************")
+		inputs = input("\t\t\t\t\t\t==>Enter the Application want to Launch\n\t\t\t\t\t\t*****************************************\n\t\t\t\t\t\tInput\t:")
+		
+		i = inputs.lower()
+		if "chrome" in i:
+			pyttsx3.speak("Chrome is open for you")
+			os.system("chrome")
+		elif ("notepad" in i) or ("editor" in i):
+			pyttsx3.speak("notepad is open for you")
+			os.system("notepad")
+		elif ("paint" in i):
+			pyttsx3.speak("Paint is open for you")
+			os.system("mspaint")
+		elif ("antivirus" in i) or ("quick heal" in i):
+			pyttsx3.speak("antivirus is open for you")
+			os.system("SCANNER")
+		elif ("vlc" in i) or ("media" in i):
+			pyttsx3.speak("VLC is open for you")
+			os.system("vlc")
+		elif ("downloader" in i) or ("idm" in i) or ("internet download manager" in i):
+			pyttsx3.speak("downlaod manager is open for you")
+			os.system("IDMan")
+		elif ("realtek audio controller" in i) or ("realtek" in i) :
+			pyttsx3.speak("Audio Controller is open for you")
+			os.system("RtkNGUI64")
+		elif ("excel" in i):
+			pyttsx3.speak("excel is open for you")
+			os.system("EXCEL")
+		elif ("word" in i):
+			pyttsx3.speak("M s Word is open for you")
+			os.system("WINWORD")
+		elif ("powerpoint" in i) :
+			pyttsx3.speak("Power Point is open for you")
+			os.system("POWERPNT")
+		else:
+			print("\n\t\t\t\t\t\tError: Application Not Found\n") 
+			pyttsx3.speak("Application Not found")
+			
+				
+	elif j==2:
+		print("\n\t\t\t\t\t\t+++++++Thank you for using Software+++++++")
+		pyttsx3.speak("Thank you for using Software")
+		break
+	else:
+		print("\n\t\t\t\t\Invalid Input")
+		pyttsx3.speak("+++++++Please Entre Valid Input+++++++")
